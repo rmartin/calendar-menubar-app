@@ -1,37 +1,38 @@
 {
-	"name": "calendar-menubar-app",
-	"version": "1.0.0",
-	"description": "Simple calendar menubar app built using electron and menubar.",
-	"main": "scripts/main.js",
-	"scripts": {
-		"build": "electron-packager . CalendarMenuBarApp --platform=darwin --arch=x64 --version=0.36.0 --icon=Icon.icns",
-		"start": "npm run clean && npm run build && webpack && electron .",
-		"review": "npm run clean && webpack && httpster -p 9000",
-		"clean": "rm -rf CalendarMenuBarApp-darwin-x64 && rm -rf dist"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/rmartin/calendar-menubar-app.git"
-	},
-	"keywords": [
-		"calendar",
-		"electron"
-	],
-	"author": "Roy Martin",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/rmartin/calendar-menubar-app/issues"
-	},
-	"homepage": "https://github.com/rmartin/calendar-menubar-app#readme",
-	"dependencies": {
-		"menubar": "^3.0.0"
-	},
-	"devDependencies": {
-		"babel-core": "^6.4.0",
-		"babel-loader": "^6.2.1",
-		"babel-preset-es2015": "^6.3.13",
-		"electron-packager": "^5.1.0",
-		"electron-prebuilt": "^0.36.0",
-		"webpack": "^1.12.10"
-	}
+  "name": "calendar-menubar-app",
+  "version": "1.0.0",
+  "description": "Simple calendar menubar app built using electron and menubar.",
+  "main": "scripts/main.js",
+  "scripts": {
+    "build": "electron-packager . CalendarMenuBarApp --platform=darwin --arch=x64 --version=0.36.0 --icon=Icon.icns",
+    "start": "npm run clean && webpack && npm run build && electron .",
+    "review": "npm run clean && webpack && httpster -p 9000",
+    "clean": "rm -rf CalendarMenuBarApp-darwin-x64 && rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmartin/calendar-menubar-app.git"
+  },
+  "keywords": [
+    "calendar",
+    "electron"
+  ],
+  "author": "Roy Martin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rmartin/calendar-menubar-app/issues"
+  },
+  "homepage": "https://github.com/rmartin/calendar-menubar-app#readme",
+  "dependencies": {
+    "menubar": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.4.0",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "electron-packager": "^5.1.0",
+    "electron-prebuilt": "^0.36.0",
+    "httpster": "^1.0.1",
+    "webpack": "^1.12.10"
+  }
 }
